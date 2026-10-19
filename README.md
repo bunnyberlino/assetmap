@@ -1,7 +1,50 @@
 # Asset Map
 
-An offline map of your people and physical assets, with named incident markers and impact rings.
-It runs entirely in your browser from a plain folder: there is no server, no installation, and no data leaves your computer.
+**An offline map of your people and sites for situational awareness, incident management and crisis management.**
+
+When something happens, security teams need answers fast: *who is near it, which sites are exposed, and who do we call first?*
+Asset Map answers that from the employee and site lists you already have.
+Load your CSV files, drop markers where the incident is, and see at once who and what falls inside your impact rings, ordered by distance.
+
+It runs entirely in a web browser from a plain folder. There is no server, no installation, no account and no cloud.
+Personnel data never leaves the analyst's machine.
+
+## Built for security, resilience and duty-of-care teams
+
+| Role | What Asset Map gives you |
+|---|---|
+| **Global security / GSOC analysts** | A live common operating picture of where your people and facilities are, during an event or before one. |
+| **Incident managers** | A record of the incident: named markers (*Fire 1, Fire 2 …*), impact rings, affected headcount, and a saved incident file. |
+| **Crisis management teams** | Exposure figures for the first briefing: people in the inner ring, people in all rings, sites affected, per marker. |
+| **Travel risk and duty of care** | Locations of employees and residents, by tag (VIP, traveller, first aider …) and by country. |
+| **Business continuity** | Which offices, partners and sites sit inside the impact area, for continuity and recovery decisions. |
+
+### Typical scenarios
+
+- **Natural hazards.** For wildfires, floods, earthquakes or storms, place a marker on every reported hotspot, set rings that fit the hazard, and keep moving markers as the situation develops.
+- **Security events.** For civil unrest, terrorist attacks, protests or active threats near an office, size the rings and export everyone affected for welfare checks.
+- **Infrastructure and industrial.** For chemical releases, power or telecoms outages, or transport disruption, find out which sites and partners are exposed.
+- **Planning and exercises.** For tabletop exercises, site selection or concentration-risk reviews, see how many people sit within 5, 25 or 100 km of a location.
+
+### How it supports the incident cycle
+
+1. **Detect and assess.** Place one marker per incident location, by clicking the map, pasting coordinates from a report or alert, or dragging. Rings show the zones at once.
+2. **Account for people.** The KPIs show *people in rings*, *inner ring* and *physical assets in rings*. The roster lists everyone affected with the nearest marker and the distance.
+3. **Act.** **Export affected** downloads a CSV, sorted by ring and distance, ready for your mass-notification or roll-call tool, a hotline team, or a check-in tracker.
+4. **Document.** **Save** writes the incident (markers, names, rings, notes) to a CSV next to your data. Reload it later for briefings, hand-overs or the after-action review.
+
+### Why it is safe to use with personnel data
+
+- **Offline by design.** The page blocks network connections. The default basemaps (vector outline and terrain relief) and the geocoder are bundled in the folder, so it works on air-gapped and restricted networks.
+- **Your data stays local.** CSVs are read in the browser and never uploaded. Online street and satellite maps are opt-in and receive only map-tile requests, never your data. A warning is shown before they are first used.
+- **Data minimisation.** Only an ID, a type and a location (country plus city or postal code) are required. Names and emails are optional, so you can work with pseudonymised IDs.
+- **Easy to distribute.** One zip that colleagues unzip and open. Nothing to install, so no IT approval cycle, and it works on locked-down laptops.
+
+### Know the limits
+
+- **Location precision depends on the input.** Records are placed by coordinates when given, otherwise by postal code (area centre), city centre, or as a last resort the country centre. Each record shows which method placed it. Treat postal and city placements as approximate, especially for small rings.
+- **Rings are circles.** They mark distance, not a modelled hazard footprint. Smoke plumes, flood extents and blast effects are not modelled.
+- **It is a snapshot, not tracking.** The map shows where your data says people are based. It is not real-time location. Pair it with your travel booking and check-in data during an event.
 
 © 2026 Alexander Habath. Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE): free for any noncommercial use, including personal use, research, education, charities and government. Commercial use needs permission from the author. Third-party parts are listed in [`THIRD-PARTY.md`](THIRD-PARTY.md).
 

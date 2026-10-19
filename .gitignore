@@ -11,3 +11,6 @@ data/*.csv
 # reference file with real company data — never commit
 example/
 .obsidian/
+
+# personal project notes (Obsidian vault) — kept local only
+project asset map/
