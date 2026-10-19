@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- Asset Map — © 2026 Alexander Habath. All rights reserved. -->
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' file: blob: data:; img-src 'self' file: blob: data: https://server.arcgisonline.com https://services.arcgisonline.com; connect-src 'self'">
+<title>Asset Map</title>
+<link rel="stylesheet" href="app/leaflet.css">
+<link rel="stylesheet" href="app/styles.css">
+</head>
+<body>
+<div class="shell">
+  <header>
+    <h1 id="title">Asset Map</h1>
+    <span class="company" id="company"></span>
+    <span class="stamp">PEOPLE <b id="s-people">—</b> · PHYSICAL <b id="s-sites">—</b> · PLACED <b id="s-geo">—</b></span>
+    <span class="spacer"></span>
+    <span class="class-mark" id="class-mark">Internal</span>
+    <button id="btn-theme" class="ghost" title="Switch light / dark theme">Light</button>
+  </header>
+
+  <div class="body">
+    <div class="mapwrap">
+      <div id="map"></div>
+
+      <div id="start" class="start" hidden>
+        <div class="start-card">
+          <h2>Load your data</h2>
+          <p>Choose the folder that holds <code>employees.csv</code>, <code>assets.csv</code>,
+             <code>types.csv</code> and <code>settings.csv</code>. Everything is read on this computer — nothing is uploaded.</p>
+          <div class="start-actions">
+            <button id="btn-reopen" class="on" hidden>Reopen</button>
+            <button id="btn-open-folder" class="on">Open data folder</button>
+            <label class="btn">Choose folder<input type="file" id="in-folder" webkitdirectory multiple hidden></label>
+            <label class="btn ghost">Choose files<input type="file" id="in-files" accept=".csv,text/csv" multiple hidden></label>
+            <button id="btn-start-close" class="ghost" hidden>Cancel</button>
+          </div>
+          <div class="drop" id="drop">or drop the folder / CSV files here</div>
+          <p class="fine">Tip: the bundled <code>data</code> folder contains sample data to try the map.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rail">
+      <section>
+        <div class="kpi">
+          <div><div class="n" id="k-shown">0</div><div class="l">Listed</div></div>
+          <div class="warm"><div class="n" id="k-ring">—</div><div class="l">People in rings</div></div>
+          <div class="hot"><div class="n" id="k-inner">—</div><div class="l">Inner ring</div></div>
+          <div class="site"><div class="n" id="k-site">—</div><div class="l">Physical in rings</div></div>
+        </div>
+      </section>
+
+      <nav class="tabs" role="tablist">
+        <button role="tab" data-tab="incident" class="on">Incident</button>
+        <button role="tab" data-tab="filter">Filter</button>
+        <button role="tab" data-tab="data">Data</button>
+      </nav>
+
+      <!-- ===== incident ===== -->
+      <section class="tab" id="tab-incident">
+        <div class="field-row">
+          <label>Incident<input type="text" id="inc-name" placeholder="e.g. Warehouse fires"></label>
+        </div>
+        <div class="field-row">
+          <label class="sm">Marker name<input type="text" id="inc-prefix" placeholder="Fire"></label>
+          <label class="sm">Default rings (km)<input type="text" id="inc-rings" placeholder="5; 25; 100"></label>
+        </div>
+        <div class="ctl" style="margin-top:8px">
+          <button id="btn-place" title="Each map click adds a marker. Esc to stop.">+ Place markers</button>
+          <input type="text" id="pin" placeholder="or paste coordinates — 47.1202, 8.5808">
+          <button id="btn-pin">Add</button>
+        </div>
+        <ol class="markers" id="markers"></ol>
+        <div class="empty sm" id="markers-empty">No markers yet. Click <b>+ Place markers</b>, then click the map — once per marker.</div>
+        <div class="ctl" style="margin-top:8px">
+          <button id="btn-inc-save">Save</button>
+          <label class="btn">Load<input type="file" id="in-incident" accept=".csv,text/csv" hidden></label>
+          <button id="btn-inc-export" class="ghost" title="Export affected people and assets as CSV">Export affected</button>
+          <span class="spacer"></span>
+          <button id="btn-inc-reset" class="ghost danger">Reset</button>
+        </div>
+        <div class="hint" id="hint"></div>
+      </section>
+
+      <!-- ===== filter ===== -->
+      <section class="tab" id="tab-filter" hidden>
+        <div class="ctl">
+          <input type="text" id="q" placeholder="ID, name, tag, city, email…" autocomplete="off">
+        </div>
+        <div class="ctl" style="margin-top:6px">
+          <select id="f-cat"><option value="">People + physical</option><option value="human">People only</option><option value="physical">Physical only</option></select>
+          <select id="f-type"><option value="">All types</option></select>
+        </div>
+        <div class="ctl" style="margin-top:6px">
+          <select id="f-cc"><option value="">All countries</option></select>
+          <select id="f-tag"><option value="">All tags</option></select>
+        </div>
+        <div class="ctl" style="margin-top:6px">
+          <label class="chk"><input type="checkbox" id="f-ring"> Only inside rings</label>
+        </div>
+        <div class="ctl" style="margin-top:10px">
+          <span class="seg">
+            <button id="v-bub" class="on">Bubbles</button>
+            <button id="v-pt">Points</button>
+          </span>
+          <span class="seg">
+            <button data-rg="fit">Fit data</button>
+            <button data-rg="amer">Americas</button>
+            <button data-rg="emea">EMEA</button>
+            <button data-rg="apac">APAC</button>
+          </span>
+        </div>
+        <button id="btn-filter-clear" class="ghost" style="margin-top:8px">Clear filters</button>
+      </section>
+
+      <!-- ===== data ===== -->
+      <section class="tab" id="tab-data" hidden>
+        <div class="ctl">
+          <span class="src" id="src-name">No data loaded</span>
+          <span class="spacer"></span>
+          <button id="btn-reload" title="Read the CSV files again after editing them">Reload</button>
+          <button id="btn-change" class="ghost">Change…</button>
+        </div>
+        <div class="report" id="report"></div>
+        <details class="settings">
+          <summary>Settings</summary>
+          <div class="field-row"><label>Map title<input type="text" id="set-title"></label></div>
+          <div class="field-row"><label>Company<input type="text" id="set-company"></label>
+            <label class="sm">Classification<input type="text" id="set-class"></label></div>
+          <div class="sub">Postal-code lookup — countries <span class="dim" id="postal-sum"></span></div>
+          <div class="ctl" style="margin-bottom:4px">
+            <button class="ghost" id="postal-all">All</button><button class="ghost" id="postal-none">None</button>
+            <span class="dim sm">Unticked countries use city-level placement.</span>
+          </div>
+          <div class="postal" id="postal-list"></div>
+          <div class="ctl" style="margin-top:8px">
+            <button id="btn-set-apply">Apply</button>
+            <button id="btn-set-save" class="ghost">Save settings.csv</button>
+          </div>
+        </details>
+      </section>
+
+      <section class="grow">
+        <div class="tablewrap">
+          <table>
+            <thead><tr>
+              <th data-k="id">Ref <span class="ar"></span></th>
+              <th data-k="label">Name / place <span class="ar"></span></th>
+              <th data-k="cc">CC <span class="ar"></span></th>
+              <th data-k="near">Marker <span class="ar"></span></th>
+              <th data-k="dist" style="text-align:right">km <span class="ar"></span></th>
+            </tr></thead>
+            <tbody id="tb"></tbody>
+          </table>
+          <div class="empty" id="empty" hidden></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2026 Alexander Habath · Asset Map <span id="version"></span></span>
+    <span class="spacer"></span>
+    <span class="dim">Offline layers send no network requests. Data stays on this computer.</span>
+  </footer>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="app/leaflet.js"></script>
+<script src="geo/basemap.js"></script>
+<script src="geo/countries.js"></script>
+<script src="geo/admin1.js"></script>
+<script src="geo/cities.js"></script>
+<script src="geo/postal/index.js"></script>
+<script src="app/util.js"></script>
+<script src="app/csv.js"></script>
+<script src="app/settings.js"></script>
+<script src="app/geocode.js"></script>
+<script src="app/core.js"></script>
+<script src="app/loader.js"></script>
+<script src="app/map.js"></script>
+<script src="app/incidents.js"></script>
+<script src="app/table.js"></script>
+<script src="app/main.js"></script>
+</body>
+</html>

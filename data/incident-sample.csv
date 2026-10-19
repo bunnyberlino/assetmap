@@ -1,0 +1,5 @@
+record,name,lat,lon,rings_km,note,visible,created
+incident,Sample — wildfires near Basel,,,"5;15;40",Fire,,2026-10-19T08:00:00Z
+marker,Fire 1,47.5210,7.6170,,first report,yes,
+marker,Fire 2,47.4870,7.7320,,,yes,
+marker,Fire 3,47.6060,7.6610,"2;10",spot fire,yes,

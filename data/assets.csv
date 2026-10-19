@@ -1,0 +1,17 @@
+id,name,email,tag,type,city,zip,country,region,lat,lon
+56,Italy office,italy@example.com,offices,office,Milano,20121,Italy,Lombardia
+10,Basel HQ,,offices,office,Basel,4051,Switzerland,BS
+11,Munich office,,offices,office,München,80331,Germany,
+12,London office,,offices,office,London,EC2V 7HH,United Kingdom,
+13,Paris office,,offices,office,Paris,75008,France,
+14,San Mateo office,,offices,office,San Mateo,94403,United States,CA
+15,New Jersey office,,offices,office,Morristown,07960,United States,NJ
+16,Singapore office,,offices,office,Singapore,018956,Singapore,
+17,Tokyo office,,offices,office,Tokyo,100-0005,Japan,
+20,Logistics partner,ops@partner.example,partners,partner,Lörrach,79539,Germany,
+21,Research partner,,partners,partner,Boston,02115,United States,MA
+22,Distribution partner,,partners,partner,Madrid,28020,Spain,
+30,Warehouse North,,sites,site,Hamburg,20457,Germany,
+31,Plant Ticino,,sites,site,Mendrisio,6850,Switzerland,TI
+32,Data centre,,sites,site,Frankfurt am Main,60314,Germany,,50.1109,8.7270
+33,Lab São Paulo,,sites,site,São Paulo,04547-004,Brazil,

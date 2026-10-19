@@ -1,0 +1,13 @@
+.DS_Store
+dist/
+node_modules/
+# user data: only the bundled samples are tracked
+data/*.csv
+!data/employees.csv
+!data/assets.csv
+!data/types.csv
+!data/settings.csv
+!data/incident-sample.csv
+# reference file with real company data — never commit
+example/
+.obsidian/

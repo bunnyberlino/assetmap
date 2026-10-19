@@ -1,0 +1,333 @@
+id,name,email,tag,type,city,zip,country,region,lat,lon
+3,John,john@example.com,VIP,employee,Milano,20121,Italy,Lombardia
+4,Fatima Nguyen,fatima.nguyen@example.com,VIP,employee,Madrid,28001,Spain,
+5,Leon Novak,leon.novak@example.com,,employee,Basel,4051,Switzerland,BS
+6,,,,employee,Zürich,8001,CH,ZH
+7,,,,resident,Basel,4051,Switzerland,BS
+8,David Moreau,david.moreau@example.com,,employee,Basel,4051,Switzerland,BS
+9,,,,employee,Amsterdam,1012 AB,Netherlands,
+10,,,,employee,Milano,20121,Italy,Lombardia
+11,Olivia Bianchi,olivia.bianchi@example.com,Remote,employee,Basel,4051,Switzerland,BS
+12,,,,employee,Morristown,,United States,NJ
+13,Priya Bianchi,priya.bianchi@example.com,,employee,Bengaluru,560001,India,
+14,Liam Smith,liam.smith@example.com,Travel,employee,Lörrach,79539,Germany,
+15,,,Remote,employee,Basel,4051,Switzerland,BS
+16,,,,employee,New York,10001,USA,NY
+17,Liam Huber,liam.huber@example.com,First aid,employee,London,SW1A 1AA,United Kingdom,
+18,Mia Huber,mia.huber@example.com,Exec,employee,Barcelona,8001,España,
+19,Noah Garcia,,,resident,Toronto,M5H 2N2,Canada,ON
+20,Mia Tanaka,,,employee,London,,United Kingdom,
+21,,,VIP,employee,Singapore,018956,Singapore,
+22,Emma Novak,emma.novak@example.com,Remote,employee,Zug,6300,CH,
+23,,,Remote,employee,San Mateo,94401,United States,CA
+24,,,,resident,München,80331,Germany,Bayern
+25,Yuki Keller,yuki.keller@example.com,,resident,Roma,184,Italia,Lazio
+26,Diego Rossi,diego.rossi@example.com,Exec,employee,Morristown,7960,United States,NJ
+27,Jonas Nguyen,jonas.nguyen@example.com,,employee,Hamburg,20095,DEU,
+28,,,,resident,Wien,,Austria,
+29,Fatima Huber,,,employee,Amsterdam,1012 AB,Netherlands,
+30,Sara Nguyen,,Remote,employee,Milano,20121,Italy,Lombardia
+31,,,,employee,Basel,4051,Switzerland,BS
+32,,,,employee,Genève,1201,Schweiz,
+33,Priya Brown,priya.brown@example.com,Remote,employee,Basel,4051,Switzerland,BS
+34,,,,resident,Stockholm,111 20,Sweden,
+35,Lea Brown,lea.brown@example.com,,employee,Lörrach,79539,Germany,
+36,,,,employee,Milano,,Italy,Lombardia
+37,,,Remote,employee,Zürich,8001,CH,ZH
+38,,,VIP,resident,Madrid,28001,Spain,
+39,Nina Schmid,nina.schmid@example.com,,employee,Lörrach,79539,Germany,
+40,Mia Silva,,,employee,Torino,,IT,
+41,,,First aid,resident,Toronto,M5H 2N2,Canada,ON
+42,Paul Smith,,Travel,employee,Bengaluru,560001,India,
+43,,,,employee,Dubai,,United Arab Emirates,
+44,,,,employee,München,80331,Germany,Bayern
+45,Nina Brown,,First aid,employee,Stockholm,111 20,Sweden,
+46,Liam Meier,liam.meier@example.com,,employee,Singapore,018956,Singapore,
+47,Olivia Weber,olivia.weber@example.com,,employee,Berlin,10115,Deutschland,
+48,Sofia Brown,,,employee,Basel,4051,Switzerland,BS
+49,Priya Schmid,,,employee,München,80331,Germany,Bayern
+50,,,,employee,Toronto,M5H 2N2,Canada,ON
+51,,,,employee,Zürich,8001,CH,ZH
+52,,,Travel,employee,Morristown,7960,United States,NJ
+53,Jonas Meier,,,employee,Frankfurt am Main,60311,DE,
+54,Ben Weber,,Exec,employee,Frankfurt am Main,60311,DE,
+55,,,,employee,Tokyo,100-0001,Japan,
+56,Luca Moreau,,Exec,employee,Frankfurt am Main,60311,DE,
+57,Emma Novak,emma.novak@example.com,Exec,employee,Ciudad de México,06600,Mexico,
+58,Anna Silva,anna.silva@example.com,Remote,employee,Torino,10121,IT,
+59,Giulia Kumar,giulia.kumar@example.com,,employee,Toronto,,Canada,ON
+60,,,,employee,Bengaluru,,India,
+61,,,,employee,Tokyo,100-0001,Japan,
+62,,,First aid,resident,Barcelona,8001,España,
+63,,,VIP,employee,Frankfurt am Main,60311,DE,
+64,,,First aid,employee,Genève,,Schweiz,
+65,,,,employee,San Mateo,94401,United States,CA
+66,Sara Smith,sara.smith@example.com,,employee,Torino,10121,IT,
+67,Lea Huber,lea.huber@example.com,First aid,resident,Lausanne,1003,Suisse,
+68,Ben Moreau,,Exec,employee,Raleigh,27601,US,NC
+69,,,Exec,employee,Manchester,M1 1AE,UK,
+70,Leon Schmid,,,employee,München,80331,Germany,Bayern
+71,Elias Nguyen,,Remote,employee,Basel,4051,Switzerland,BS
+72,Fatima Moreau,,Exec,employee,Genève,1201,Schweiz,
+73,,,Remote,employee,Lörrach,79539,Germany,
+74,Tom Brown,,First aid,employee,London,SW1A 1AA,United Kingdom,
+75,,,,employee,Morristown,,United States,NJ
+76,,,,employee,Manchester,M1 1AE,UK,
+77,Diego Smith,diego.smith@example.com,,employee,Basel,4051,Switzerland,BS
+78,Yuki Meier,yuki.meier@example.com,,employee,München,80331,Germany,Bayern
+79,,,,employee,Warszawa,00-001,Poland,
+80,,,Travel,employee,San Mateo,94401,United States,CA
+81,Nina Brown,nina.brown@example.com,,employee,Morristown,7960,United States,NJ
+82,Elias Garcia,elias.garcia@example.com,,resident,Paris,75001,France,
+83,,,Remote,resident,San Mateo,94401,United States,CA
+84,Yuki Weber,,,employee,München,80331,Germany,Bayern
+85,Ben Tanaka,ben.tanaka@example.com,First aid,employee,San Mateo,94401,United States,CA
+86,Priya Nguyen,priya.nguyen@example.com,,resident,San Mateo,94401,United States,CA
+87,,,,employee,London,SW1A 1AA,United Kingdom,
+88,Priya Bianchi,,,employee,Morristown,7960,United States,NJ
+89,,,,employee,San Mateo,94401,United States,CA
+90,Anna Kumar,anna.kumar@example.com,VIP,employee,Dubai,,United Arab Emirates,
+91,Priya Huber,priya.huber@example.com,Remote,employee,New York,10001,USA,NY
+92,,,Travel,resident,Zürich,8001,CH,ZH
+93,,,First aid,employee,Lausanne,,Suisse,
+94,,,Remote,resident,Zürich,8001,CH,ZH
+95,,,First aid,employee,Buenos Aires,C1002,Argentina,
+96,Elias Ricci,elias.ricci@example.com,First aid,employee,Zürich,8001,CH,ZH
+97,Emma Novak,emma.novak@example.com,,employee,Toronto,M5H 2N2,Canada,ON
+98,,,Exec,employee,Paris,75001,France,
+99,Giulia Tanaka,,,employee,Basel,,Switzerland,BS
+100,Luca Tanaka,luca.tanaka@example.com,,employee,Basel,4051,Switzerland,BS
+101,Giulia Moreau,,VIP,employee,Basel,4051,Switzerland,BS
+102,Yuki Bianchi,yuki.bianchi@example.com,,employee,Frankfurt am Main,60311,DE,
+103,,,Exec,resident,Lyon,69001,FR,
+104,Paul Huber,,Exec,employee,New York,10001,USA,NY
+105,Chiara Huber,chiara.huber@example.com,Exec,employee,Toronto,M5H 2N2,Canada,ON
+106,,,Travel,employee,Milano,20121,Italy,Lombardia
+107,,,Exec,resident,Johannesburg,2001,South Africa,
+108,David Fischer,david.fischer@example.com,,employee,Genève,1201,Schweiz,
+109,,,,resident,Roma,184,Italia,Lazio
+110,Giulia Novak,,,resident,Milano,20121,Italy,Lombardia
+111,,,,employee,Tokyo,100-0001,Japan,
+112,,,First aid,employee,New York,10001,USA,NY
+113,Olivia Novak,olivia.novak@example.com,,employee,Boston,2108,US,MA
+114,,,VIP,employee,Wien,,Austria,
+115,,,,employee,Tokyo,,Japan,
+116,,,Remote,employee,Singapore,,Singapore,
+117,Yuki Tanaka,yuki.tanaka@example.com,Exec,resident,New York,10001,USA,NY
+118,Sofia Keller,sofia.keller@example.com,,employee,San Mateo,94401,United States,CA
+119,Leon Bianchi,leon.bianchi@example.com,,employee,Zug,6300,CH,
+120,Diego Muster,diego.muster@example.com,,employee,München,80331,Germany,Bayern
+121,Elias Keller,elias.keller@example.com,,employee,München,80331,Germany,Bayern
+122,Noah Rossi,noah.rossi@example.com,First aid,employee,Basel,4051,Switzerland,BS
+123,Leon Bianchi,leon.bianchi@example.com,,employee,Wien,1010,Austria,
+124,Emma Fischer,emma.fischer@example.com,,employee,Dubai,,United Arab Emirates,
+125,Diego Novak,,,employee,Dubai,,United Arab Emirates,
+126,David Rossi,,,employee,Toronto,M5H 2N2,Canada,ON
+127,,,,employee,New York,10001,USA,NY
+128,Yuki Garcia,,,employee,Bern,,Switzerland,
+129,,,,employee,Zürich,8001,CH,ZH
+130,,,Remote,employee,Bern,3011,Switzerland,
+131,,,Travel,employee,Basel,4051,Switzerland,BS
+132,Luca Keller,,VIP,employee,Basel,4051,Switzerland,BS
+133,Leon Smith,leon.smith@example.com,,employee,München,80331,Germany,Bayern
+134,,,Travel,employee,Lyon,69001,FR,
+135,,,,employee,Basel,,Switzerland,BS
+136,Tom Novak,,Exec,employee,Zug,6300,CH,
+137,Nina Rossi,nina.rossi@example.com,First aid,employee,Zürich,8001,CH,ZH
+138,,,Travel,employee,New York,10001,USA,NY
+139,David Muster,david.muster@example.com,,employee,Paris,75001,France,
+140,,,VIP,employee,Zürich,8001,CH,ZH
+141,,,,employee,Morristown,7960,United States,NJ
+142,,,VIP,employee,Basel,4051,Switzerland,BS
+143,Yuki Garcia,yuki.garcia@example.com,,employee,Boston,2108,US,MA
+144,Laura Moreau,,Travel,resident,Roma,184,Italia,Lazio
+145,,,,employee,Lausanne,1003,Suisse,
+146,,,Remote,employee,Stockholm,111 20,Sweden,
+147,,,Remote,employee,Morristown,7960,United States,NJ
+148,Fatima Weber,,VIP,employee,Basel,4051,Switzerland,BS
+149,,,,employee,Hamburg,20095,DEU,
+150,Chiara Meier,chiara.meier@example.com,VIP,employee,Warszawa,00-001,Poland,
+151,Chiara Keller,chiara.keller@example.com,,employee,Buenos Aires,C1002,Argentina,
+152,Olivia Bianchi,olivia.bianchi@example.com,,employee,Morristown,7960,United States,NJ
+153,Ben Nguyen,,Exec,resident,Frankfurt am Main,,DE,
+154,Ben Novak,,Travel,employee,Genève,1201,Schweiz,
+155,Giulia Muster,giulia.muster@example.com,,employee,Basel,4051,Switzerland,BS
+156,Sofia Novak,sofia.novak@example.com,VIP,employee,Johannesburg,2001,South Africa,
+157,Olivia Huber,,,employee,Roma,184,Italia,Lazio
+158,Priya Fischer,priya.fischer@example.com,VIP,employee,Basel,4051,Switzerland,BS
+159,Olivia Kumar,,Travel,employee,Warszawa,00-001,Poland,
+160,,,First aid,employee,Basel,4051,Switzerland,BS
+161,Sara Tanaka,,VIP,employee,Basel,4051,Switzerland,BS
+162,Yuki Moreau,yuki.moreau@example.com,Travel,employee,Genève,1201,Schweiz,
+163,Leon Garcia,leon.garcia@example.com,,employee,Basel,4051,Switzerland,BS
+164,,,,employee,Bengaluru,560001,India,
+165,,,,employee,Zürich,8001,CH,ZH
+166,,,,employee,Basel,4051,Switzerland,BS
+167,Anna Kumar,,Exec,employee,Hamburg,20095,DEU,
+168,Mia Smith,mia.smith@example.com,,employee,Bern,3011,Switzerland,
+169,Laura Muster,laura.muster@example.com,,employee,Milano,,Italy,Lombardia
+170,,,,employee,Shanghai,,China,
+171,,,VIP,employee,München,80331,Germany,Bayern
+172,Mia Brown,mia.brown@example.com,,employee,Raleigh,27601,US,NC
+173,,,,employee,Zug,6300,CH,
+174,Paul Bianchi,paul.bianchi@example.com,Remote,employee,Roma,184,Italia,Lazio
+175,Ben Schmid,ben.schmid@example.com,Remote,employee,Warszawa,00-001,Poland,
+176,Noah Rossi,,VIP,employee,Zürich,8001,CH,ZH
+177,Lea Bianchi,,,employee,Toronto,M5H 2N2,Canada,ON
+178,Chiara Weber,chiara.weber@example.com,,employee,Roma,184,Italia,Lazio
+179,Marco Weber,,,employee,Roma,,Italia,Lazio
+180,Elias Brown,elias.brown@example.com,Exec,employee,Bengaluru,560001,India,
+181,,,,employee,Boston,,US,MA
+182,Fatima Dubois,fatima.dubois@example.com,,resident,Bern,3011,Switzerland,
+183,Emma Rossi,,First aid,employee,Roma,184,Italia,Lazio
+184,,,VIP,employee,New York,10001,USA,NY
+185,Emma Weber,emma.weber@example.com,Travel,employee,Basel,,Switzerland,BS
+186,,,,employee,London,SW1A 1AA,United Kingdom,
+187,Sara Silva,sara.silva@example.com,Remote,employee,San Mateo,94401,United States,CA
+188,,,Travel,employee,Lörrach,79539,Germany,
+189,Anna Novak,anna.novak@example.com,Travel,employee,Toronto,M5H 2N2,Canada,ON
+190,Liam Rossi,,,resident,Toronto,M5H 2N2,Canada,ON
+191,Paul Huber,paul.huber@example.com,First aid,employee,Milano,20121,Italy,Lombardia
+192,Yuki Moreau,yuki.moreau@example.com,VIP,employee,Zürich,8001,CH,ZH
+193,Lea Novak,lea.novak@example.com,Travel,employee,New York,10001,USA,NY
+194,Sara Fischer,sara.fischer@example.com,Exec,employee,Basel,4051,Switzerland,BS
+195,Diego Bianchi,diego.bianchi@example.com,Exec,employee,Milano,,Italy,Lombardia
+196,,,,employee,Lörrach,79539,Germany,
+197,Sara Dubois,sara.dubois@example.com,,resident,Boston,2108,US,MA
+198,,,,employee,Tel Aviv,,Israel,
+199,,,First aid,employee,Zug,6300,CH,
+200,,,,employee,Hamburg,,DEU,
+201,,,,employee,Berlin,10115,Deutschland,
+202,Leon Moreau,leon.moreau@example.com,Remote,resident,Dubai,,United Arab Emirates,
+203,David Ricci,david.ricci@example.com,Remote,employee,Manchester,M1 1AE,UK,
+204,,,,employee,Roma,184,Italia,Lazio
+205,,,,employee,Berlin,10115,Deutschland,
+206,Elias Brown,,,resident,Bengaluru,560001,India,
+207,,,,employee,Milano,20121,Italy,Lombardia
+208,Priya Keller,,,employee,München,80331,Germany,Bayern
+209,Olivia Kumar,olivia.kumar@example.com,,employee,Berlin,10115,Deutschland,
+210,Priya Fischer,priya.fischer@example.com,Travel,resident,Dubai,,United Arab Emirates,
+211,Luca Huber,luca.huber@example.com,,employee,Zürich,8001,CH,ZH
+212,Laura Muster,,,employee,München,80331,Germany,Bayern
+213,Paul Ricci,paul.ricci@example.com,,employee,Frankfurt am Main,,DE,
+214,Sara Nguyen,,,employee,Genève,1201,Schweiz,
+215,Lea Huber,,,employee,Basel,4051,Switzerland,BS
+216,,,,employee,Manchester,,UK,
+217,,,Exec,employee,Madrid,28001,Spain,
+218,Nina Bianchi,,,employee,Basel,,Switzerland,BS
+219,,,VIP,employee,New York,10001,USA,NY
+220,Luca Smith,,,employee,Basel,,Switzerland,BS
+221,Laura Silva,laura.silva@example.com,First aid,employee,Zug,6300,CH,
+222,Priya Kumar,,VIP,employee,Roma,184,Italia,Lazio
+223,,,VIP,employee,Lausanne,1003,Suisse,
+224,Jonas Dubois,jonas.dubois@example.com,,employee,Hamburg,20095,DEU,
+225,Luca Schmid,luca.schmid@example.com,Exec,employee,Lausanne,,Suisse,
+226,Diego Brown,diego.brown@example.com,First aid,employee,New York,,USA,NY
+227,Elias Keller,elias.keller@example.com,,employee,Madrid,28001,Spain,
+228,Yuki Smith,yuki.smith@example.com,Remote,employee,Singapore,018956,Singapore,
+229,Marco Kumar,marco.kumar@example.com,VIP,employee,Lausanne,1003,Suisse,
+230,David Schmid,david.schmid@example.com,,employee,Zürich,8001,CH,ZH
+231,Liam Meier,,VIP,resident,München,,Germany,Bayern
+232,,,First aid,employee,Bern,,Switzerland,
+233,Leon Fischer,leon.fischer@example.com,,employee,Madrid,28001,Spain,
+234,,,,resident,Roma,184,Italia,Lazio
+235,David Ricci,david.ricci@example.com,VIP,employee,Lörrach,79539,Germany,
+236,Ben Moreau,,Travel,resident,Lörrach,79539,Germany,
+237,Liam Fischer,,Remote,employee,Basel,4051,Switzerland,BS
+238,Olivia Bianchi,,,employee,Tokyo,100-0001,Japan,
+239,,,,employee,Roma,184,Italia,Lazio
+240,Leon Meier,leon.meier@example.com,,employee,New York,10001,USA,NY
+241,,,Remote,employee,New York,10001,USA,NY
+242,Jonas Meier,jonas.meier@example.com,Remote,employee,Basel,,Switzerland,BS
+243,,,,employee,Basel,4051,Switzerland,BS
+244,David Weber,,Remote,resident,Madrid,28001,Spain,
+245,,,,employee,San Mateo,94401,United States,CA
+246,Olivia Schmid,,,resident,San Mateo,94401,United States,CA
+247,Nina Smith,nina.smith@example.com,,employee,Zürich,,CH,ZH
+248,,,VIP,employee,Basel,4051,Switzerland,BS
+249,,,VIP,employee,São Paulo,01310-100,Brazil,
+250,Leon Novak,leon.novak@example.com,Remote,employee,San Mateo,94401,United States,CA
+251,Yuki Huber,,,resident,Toronto,M5H 2N2,Canada,ON
+252,David Meier,david.meier@example.com,VIP,employee,Singapore,018956,Singapore,
+253,,,Exec,employee,Lyon,,FR,
+254,Sofia Meier,sofia.meier@example.com,VIP,resident,Basel,4051,Switzerland,BS
+255,Liam Dubois,liam.dubois@example.com,,resident,Zürich,8001,CH,ZH
+256,Laura Garcia,,Travel,resident,München,80331,Germany,Bayern
+257,Luca Fischer,luca.fischer@example.com,First aid,employee,Berlin,10115,Deutschland,
+258,Paul Moreau,paul.moreau@example.com,,employee,Lörrach,79539,Germany,
+259,Nina Kumar,nina.kumar@example.com,Remote,resident,Singapore,,Singapore,
+260,,,,employee,Bengaluru,,India,
+261,,,First aid,employee,Zug,6300,CH,
+262,,,Remote,resident,Bengaluru,560001,India,
+263,Noah Smith,,VIP,employee,München,80331,Germany,Bayern
+264,,,,resident,Ciudad de México,06600,Mexico,
+265,,,Travel,employee,Bengaluru,560001,India,
+266,,,First aid,employee,Bengaluru,,India,
+267,,,,employee,Morristown,7960,United States,NJ
+268,Olivia Keller,olivia.keller@example.com,,employee,Berlin,10115,Deutschland,
+269,Diego Muster,diego.muster@example.com,First aid,employee,Tel Aviv,,Israel,
+270,Mia Dubois,mia.dubois@example.com,,employee,London,SW1A 1AA,United Kingdom,
+271,Jonas Meier,jonas.meier@example.com,Travel,employee,Tel Aviv,,Israel,
+272,Elias Tanaka,elias.tanaka@example.com,,employee,Buenos Aires,C1002,Argentina,
+273,Emma Smith,emma.smith@example.com,,employee,Zürich,8001,CH,ZH
+274,,,,employee,San Mateo,94401,United States,CA
+275,,,,employee,Milano,20121,Italy,Lombardia
+276,David Meier,david.meier@example.com,VIP,employee,Bengaluru,,India,
+277,Marco Rossi,marco.rossi@example.com,,employee,Zürich,8001,CH,ZH
+278,,,,employee,New York,10001,USA,NY
+279,,,,resident,Singapore,018956,Singapore,
+280,Jonas Kumar,,First aid,employee,Hamburg,20095,DEU,
+281,,,Remote,employee,New York,10001,USA,NY
+282,,,,employee,Buenos Aires,C1002,Argentina,
+283,,,Exec,employee,München,,Germany,Bayern
+284,Marco Smith,marco.smith@example.com,,employee,Dubai,,United Arab Emirates,
+285,Nina Silva,nina.silva@example.com,Exec,employee,Raleigh,,US,NC
+286,Anna Silva,anna.silva@example.com,,employee,München,80331,Germany,Bayern
+287,Leon Muster,leon.muster@example.com,,employee,San Mateo,94401,United States,CA
+288,Marco Smith,marco.smith@example.com,,employee,Zürich,,CH,ZH
+289,Olivia Smith,,,employee,Tokyo,100-0001,Japan,
+290,,,First aid,employee,Dubai,,United Arab Emirates,
+291,Liam Novak,,,employee,Morristown,7960,United States,NJ
+292,,,Remote,resident,Lörrach,79539,Germany,
+293,,,,employee,Manchester,M1 1AE,UK,
+294,,,,employee,Chicago,,US,IL
+295,Anna Garcia,,Exec,employee,New York,10001,USA,NY
+296,David Nguyen,,VIP,employee,Lörrach,79539,Germany,
+297,Lea Kumar,lea.kumar@example.com,,employee,Roma,184,Italia,Lazio
+298,,,VIP,resident,New York,,USA,NY
+299,,,,resident,Dubai,,United Arab Emirates,
+300,Noah Bianchi,,,resident,Paris,75001,France,
+301,Priya Dubois,priya.dubois@example.com,,employee,Dubai,,United Arab Emirates,
+302,Laura Muster,laura.muster@example.com,VIP,employee,Basel,4051,Switzerland,BS
+303,Priya Novak,priya.novak@example.com,,resident,Toronto,M5H 2N2,Canada,ON
+304,,,Remote,employee,Milano,20121,Italy,Lombardia
+305,Yuki Novak,yuki.novak@example.com,VIP,employee,Warszawa,00-001,Poland,
+306,,,,employee,Madrid,28001,Spain,
+307,Leon Rossi,leon.rossi@example.com,,employee,Milano,20121,Italy,Lombardia
+308,,,VIP,employee,Basel,4051,Switzerland,BS
+309,Priya Tanaka,,VIP,employee,Basel,4051,Switzerland,BS
+310,Olivia Rossi,olivia.rossi@example.com,Exec,employee,Lausanne,,Suisse,
+311,Liam Garcia,,Exec,resident,Bern,3011,Switzerland,
+312,Tom Garcia,tom.garcia@example.com,,employee,München,80331,Germany,Bayern
+313,Paul Tanaka,,VIP,employee,Zürich,8001,CH,ZH
+314,,,Remote,employee,New York,10001,USA,NY
+315,Sofia Smith,sofia.smith@example.com,,employee,Basel,,Switzerland,BS
+316,Sara Meier,sara.meier@example.com,,employee,Sydney,,Australia,NSW
+317,,,Exec,employee,Zürich,8001,CH,ZH
+318,,,First aid,employee,Zug,6300,CH,
+319,Marco Kumar,marco.kumar@example.com,VIP,employee,Bern,3011,Switzerland,
+320,,,,employee,Shanghai,,China,
+321,,,First aid,employee,Basel,,Switzerland,BS
+322,Mia Schmid,mia.schmid@example.com,,employee,Bern,3011,Switzerland,
+323,Mia Moreau,mia.moreau@example.com,Travel,employee,München,80331,Germany,Bayern
+324,Elias Weber,elias.weber@example.com,Travel,employee,San Mateo,94401,United States,CA
+325,,,,employee,Zug,,CH,
+326,,,,employee,Boston,2108,US,MA
+327,Tom Bianchi,tom.bianchi@example.com,Exec,employee,Morristown,7960,United States,NJ
+328,Laura Novak,laura.novak@example.com,,employee,New York,10001,USA,NY
+329,Emma Bianchi,emma.bianchi@example.com,First aid,employee,Zürich,8001,CH,ZH
+330,Anna Kumar,,,resident,Wien,1010,Austria,
+331,Coord Override,,,employee,Somewhere,,Switzerland,,47.5596,7.5886
+332,,,,employee,Atlantis,99999,Atlantis,
+333,,,,contractor,Basel,4051,CH,
+334,,,,employee,,,Norway,

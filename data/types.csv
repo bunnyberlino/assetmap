@@ -1,0 +1,6 @@
+category,type,label,marker,color
+human,employee,Employee,circle,#5D9CEC
+human,resident,Resident,circle,#3FB6A0
+physical,office,Office,square,#E11D2E
+physical,partner,Partner,diamond,#B57EDC
+physical,site,Site,triangle,#F2A93B

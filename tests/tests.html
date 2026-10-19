@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Asset Map — test runner. Open this file directly in a browser (file://). © 2026 Alexander Habath -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Asset Map Tests</title>
+<style>
+  body{font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;background:#0E1116;color:#DCE3EC;margin:0;padding:20px}
+  h1{font-size:18px;margin:0 0 4px} #sum{margin:0 0 14px;font-size:14px}
+  .pass{color:#3FB6A0} .fail{color:#FF5A36} .grp{color:#8794A5;margin-top:10px;text-transform:uppercase;letter-spacing:.1em;font-size:11px}
+  pre{margin:2px 0 6px 18px;color:#FFA23A;white-space:pre-wrap}
+</style>
+</head>
+<body>
+<h1>Asset Map — tests</h1>
+<div id="sum">running…</div>
+<div id="out"></div>
+
+<script src="../geo/countries.js"></script>
+<script src="../geo/admin1.js"></script>
+<script src="../geo/cities.js"></script>
+<script src="../geo/postal/index.js"></script>
+<script src="../app/util.js"></script>
+<script src="../app/csv.js"></script>
+<script src="../app/settings.js"></script>
+<script src="../app/geocode.js"></script>
+<script src="../app/core.js"></script>
+<script src="harness.js"></script>
+<script src="test-util.js"></script>
+<script src="test-csv.js"></script>
+<script src="test-settings.js"></script>
+<script src="test-geocode.js"></script>
+<script src="test-core.js"></script>
+<script>AM.Geo.base = '../geo/'; T.run();</script>
+</body>
+</html>
