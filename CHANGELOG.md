@@ -11,3 +11,4 @@ All notable changes to Asset Map. Versions follow [semver](https://semver.org).
 - Bubble clustering for people; typed shape/colour markers for physical assets.
 - Incident with any number of named markers (Fire 1, Fire 2 …), shared or per-marker rings, save/load/reset.
 - Dark and light theme.
+- Licensed under PolyForm Noncommercial 1.0.0.

@@ -1,4 +1,4 @@
-/* Asset Map — application wiring. © 2026 Alexander Habath */
+/* Asset Map — application wiring. © 2026 Alexander Habath · PolyForm Noncommercial 1.0.0 */
 window.AM = window.AM || {};
 (function(AM){
 

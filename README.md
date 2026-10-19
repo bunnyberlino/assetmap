@@ -3,7 +3,9 @@
 An offline map of your people and physical assets, with named incident markers and impact rings.
 It runs entirely in your browser from a plain folder: there is no server, no installation, and no data leaves your computer.
 
-© 2026 Alexander Habath. All rights reserved. See `LICENSE` and `THIRD-PARTY.md`.
+© 2026 Alexander Habath. Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE): free for any noncommercial use, including personal use, research, education, charities and government. Commercial use needs permission from the author. Third-party parts are listed in [`THIRD-PARTY.md`](THIRD-PARTY.md).
+
+**Download:** get the latest `assetmap-vX.Y.Z.zip` from [Releases](https://github.com/bunnyberlino/assetmap/releases).
 
 ## Quick start
 
